@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/midautomnimage">
+
+    <TextView
+        android:id="@+id/me_current_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前用户：fox"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/me_connect_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="连接状态:连接"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/me_exit_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="退出登录"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#f96bff"
+            android:layout_marginBottom="@dimen/margin"/>
+
+        <Button
+            android:id="@+id/me_connect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="断开连接"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#ff621f"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

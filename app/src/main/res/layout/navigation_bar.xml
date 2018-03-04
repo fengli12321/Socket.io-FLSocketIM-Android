@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorMain"
+    android:paddingTop="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/navigation_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/padding">
+
+            <ImageView
+                android:id="@+id/navigation_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/navigation_back"
+                android:scaleType="centerInside"/>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/navigation_center_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/navigation_title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navigation_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

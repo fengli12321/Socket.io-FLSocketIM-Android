@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.foxpower.flchatofandroid.common.NoInsertLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/top_view"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/chat_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:background="@color/colorBg"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        layout="@layout/message_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</com.foxpower.flchatofandroid.common.NoInsertLinearLayout>

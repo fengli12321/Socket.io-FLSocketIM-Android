@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+    <TextView
+        android:id="@+id/list_unreadCount"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:minWidth="16dp"
+        android:layout_alignTop="@id/list_image"
+        android:layout_alignRight="@id/list_image"
+        android:background="@drawable/red_unread_back"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:text="99+"
+        android:gravity="center"
+        android:layout_marginTop="-8dp"
+        android:layout_marginRight="-8dp"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/list_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/list_image"
+        android:layout_toRightOf="@id/list_image"
+        android:layout_marginLeft="@dimen/padding"
+        android:text="女神妹子"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/list_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_image"
+        android:layout_alignLeft="@id/list_user_name"
+        android:text="我好喜欢你"
+        android:lines="1"
+        android:layout_marginRight="@dimen/margin"
+        android:textColor="@color/colorSecond"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_user_name"
+        android:text="19:00"
+        android:layout_marginRight="@dimen/margin"
+        android:textColor="@color/colorSecond"
+        android:textSize="11sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorSepLine"/>
+
+
+
+</RelativeLayout>

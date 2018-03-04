@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/contact_user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_launcher"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginBottom="@dimen/padding"/>
+
+        <TextView
+            android:id="@+id/contact_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:text="我的女神"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/contact_user_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[在线]"
+            android:textColor="@color/colorSecond"
+            android:textSize="13sp"
+            android:layout_marginRight="@dimen/margin"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorSepLine"
+        />
+
+</RelativeLayout>
