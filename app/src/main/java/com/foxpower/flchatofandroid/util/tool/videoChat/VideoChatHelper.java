@@ -215,7 +215,7 @@ public class VideoChatHelper{
                     FLLog.i("错误: 有人离开房间获取错误");
                 } else {
 
-                    closePeerConnection(socketId);
+//                    closePeerConnection(socketId);
                     callBack.onCloseRoom();
                 }
             }
@@ -580,6 +580,17 @@ public class VideoChatHelper{
         @Override
         public void onIceCandidate(IceCandidate iceCandidate) {
 
+            JSONObject dataObject = new JSONObject();
+            try {
+                dataObject.put("id", iceCandidate.sdpMid);
+                dataObject.put("label", iceCandidate.sdpMLineIndex);
+                dataObject.put("candidate", iceCandidate.sdp);
+                dataObject.put("socketId", this.id);
+
+                SocketManager.socket.emit("__ice_candidate", dataObject);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
 
         @Override
@@ -622,7 +633,8 @@ public class VideoChatHelper{
                 offer.put("socketId", this.id);
                 offer.put("sdp", sdp);
 
-                SocketManager.socket.emit("__offer", offer);
+                String event = "__" + type;
+                SocketManager.socket.emit(event, offer);
             } catch (JSONException e) {
 
                 FLLog.i("错误：offer发送为空");

@@ -166,7 +166,7 @@ public class HomeContactFrament extends BaseFragment {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    void onSocketEvent(MessageEvent event) {
+    public void onSocketEvent(MessageEvent event) {
 
         switch (event.getType()) {
             case EventUserOnline: // 用户上线

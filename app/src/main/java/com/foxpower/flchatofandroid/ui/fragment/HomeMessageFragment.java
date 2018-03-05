@@ -183,7 +183,7 @@ public class HomeMessageFragment extends BaseFragment {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    void onSocketMessageEvent(MessageEvent event){
+    public void onSocketMessageEvent(MessageEvent event){
 
         Object object = event.getMsg();
         switch (event.getType()){

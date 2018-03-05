@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FLChatOfAndroid.iml" filepath="$PROJECT_DIR$/FLChatOfAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket.io-FLSocketIM-Android.iml" filepath="$PROJECT_DIR$/Socket.io-FLSocketIM-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

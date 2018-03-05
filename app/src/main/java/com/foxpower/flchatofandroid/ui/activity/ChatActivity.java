@@ -661,7 +661,7 @@ public class ChatActivity extends BaseActivity {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    void onEventBus(MessageEvent event) {
+    public void onEventBus(MessageEvent event) {
 
         switch (event.getType()){
             case EventMessage: // 收到新消息
