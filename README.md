@@ -4,7 +4,7 @@
 ###### 写在前面：
 iOS项目已长传数月，虽然项目还有许多问题，但是也获得一些关注，感谢朋友的支持，苦于精力有限，项目没有怎么维护。有朋友问到Android项目为何功能有限，所以花了一段时间学习了Android，重新构建了Android项目，作为Android初学者，项目中可能有许多不足的地方，希望关注的朋友能给我提出，也欢迎有人能够加入到项目中来。
 
-##### [简书详情介绍地址](http://www.jianshu.com/p/686c4bf6df3f)
+##### [简书详情介绍地址](https://www.jianshu.com/p/cdb3b0301712)
 
 ###### Android代码地址:https://github.com/fengli12321/Socket.io-FLSocketIM-Android
 
