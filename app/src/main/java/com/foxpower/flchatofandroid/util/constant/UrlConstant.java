@@ -6,7 +6,7 @@ package com.foxpower.flchatofandroid.util.constant;
 
 public class UrlConstant {
 
-    public static final String baseUrl = "http://192.168.100.133:3000";
+    public static final String baseUrl = "http://192.168.1.5:3000";
     public static final String login_url = "mobileLogin";
     public static final String register_url = "register";
     public static final String allUsers_url = "allUsers";

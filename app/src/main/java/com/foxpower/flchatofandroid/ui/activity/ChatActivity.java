@@ -42,6 +42,7 @@ import com.foxpower.flchatofandroid.ui.view.NoScrollViewPager;
 import com.foxpower.flchatofandroid.util.constant.UrlConstant;
 import com.foxpower.flchatofandroid.util.manager.ChatManager;
 import com.foxpower.flchatofandroid.util.manager.ClientManager;
+import com.foxpower.flchatofandroid.util.manager.SocketManager;
 import com.foxpower.flchatofandroid.util.other.FLLog;
 import com.foxpower.flchatofandroid.util.other.FLUtil;
 import com.foxpower.flchatofandroid.util.tool.SoftKeyBoardListener;
@@ -63,6 +64,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import io.socket.client.Socket;
 
 /**
  * Created by fengli on 2018/2/8.
@@ -658,6 +660,17 @@ public class ChatActivity extends BaseActivity {
         ClientManager.chattingUserId = "";
         EventBus.getDefault().unregister(this);
         KeyboardUtils.hideSoftInput(this);
+
+        Socket socket = SocketManager.socket;
+        socket.off("__join");
+        socket.off("_ice_candidate");
+        socket.off("_peers");
+        socket.off("_new_peer");
+        socket.off("_remove_peer");
+        socket.off("_offer");
+        socket.off("_answer");
+        socket.off("cancelVideoChat");
+
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
